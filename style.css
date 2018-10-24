@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*base
+---------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  background-color: #FFF; }
+
+/*align
+---------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/*layout
+---------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*header
+-----------------------------------------*/
+.box {
+  background-image: url("image_beach.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+/*main
+------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#contents1 {
+  background-color: #FFF; }
+  #contents1 .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px 2%; }
+  #contents1 .contents-box {
+    margin: 10px; }
+  #contents1 h3 {
+    color: #4c4c4c;
+    background-color: #C0FFCF;
+    margin-bottom: 0; }
+  #contents1 p {
+    color: #FFF;
+    background-color: #359CE8;
+    margin: 0; }
+
+#contents2 {
+  background-color: #C0FFCF; }
+  #contents2 .button {
+    text-align: center; }
+    #contents2 .button span {
+      background-color: #359CE8;
+      padding: 10px 20px;
+      border-radius: 5px; }
+
+@media (min-width: 769px) {
+  .box {
+    height: 500px; }
+
+  #contents1 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .contents-box {
+    width: 33.33333%;
+    margin: 0 10px; } }
+
+/*# sourceMappingURL=style.css.map */

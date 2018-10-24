@@ -1,0 +1,120 @@
+@import "compass";
+
+// fontfamily
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+//colors
+$baseColor: #FFF;
+$subColor: #C0FFCF;
+$keyColor: #359CE8;
+$fontColor: #4c4c4c;
+
+/*base
+---------------------------------------*/
+html {font-size: 62.5%;}
+body {
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    background-color: $baseColor;
+}
+
+/*align
+---------------------------------------*/
+.text-center {
+    text-align: center;
+}
+/*layout
+---------------------------------------*/
+.block-center {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/*header
+-----------------------------------------*/
+.box {
+    background-image:
+    url("image_beach.jpg");
+     height: 250px;
+     width: 100%;
+     background-size: cover;
+     background-position: center center;
+}
+
+
+/*main
+------------------------------------------*/
+
+// common style
+section {
+    padding: 60px 0;
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+}
+
+//contents1
+
+#contents1 {
+    background-color: $baseColor;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px 2%;
+    }
+    .contents-box{
+        margin: 10px;
+    }
+    h3 {
+        color: $fontColor;
+        background-color:$subColor;
+        margin-bottom: 0;
+    }
+    p {
+        color: $baseColor;
+        background-color:$keyColor;
+        margin: 0;
+    }
+}
+
+//contents2
+
+#contents2 {
+    background-color:$subColor;
+    .button {
+        text-align: center;
+        span{
+        background-color:$keyColor;
+        padding:10px 20px;
+        border-radius:5px;
+        }
+    }
+}
+
+//desktop
+
+@media (min-width: 769px) {
+//header
+    .box{
+        height: 500px;
+    }
+//contents1
+#contents1 .container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contents-box {
+    width: (100% / 3);
+    margin: 0 10px;
+}
+    
+    
+}
